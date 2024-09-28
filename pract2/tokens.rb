@@ -2,7 +2,7 @@
 
 class Tokens
   def initialize(expression)
-    @tokens = expression.split # разбиваем выражение на число и операторов
+    @tokens = expression.scan(/-?\d+\.?\d*|\+|\-|\*|\/|\(|\)/) #учитываем числа с плавающей точкой и операторы
     @stack = [] # массив для хранения операторов
     @output = [] # массив для хранения результата в RPN
   end
@@ -14,15 +14,28 @@ class Tokens
     when '*', '/'
       2
     else
-      0 #все остальные нулевой приоритет
+      0 # все остальные нулевой приоритет
     end
   end
 
   def analysis
-    @tokens.each do |token| #проходим по каждому элементу выражения
-      if token =~ /\d+/  #если это число
-        @output << token  #добавляем его в результат
+    @tokens.each_with_index do |token, index| # проходим по каждому элементу выражения
+      if number?(token)
+        @output << token
+      elsif token == '(' # если это открывающая скобка
+        @stack.push(token)
+      elsif token == ')' # если это закрывающая скобка
+        while @stack.last != '('
+          @output << @stack.pop
+        end
+        @stack.pop
       elsif '+-*/'.include?(token)
+        # Проверка на деление на 0
+        if token == '/' && @tokens[index + 1] == '0'
+          raise ZeroDivisionError, 'вообще то на 0 не делим:)'
+        end
+
+        # Обрабатываем операторы по приоритету
         until @stack.empty? || precedence(@stack.last) < precedence(token)
           @output << @stack.pop
         end
@@ -30,15 +43,26 @@ class Tokens
       end
     end
 
-    #перемещаем операторов из стека в аутпут
+    # перемещаем оставшиеся операторы из стека в результат
     while !@stack.empty?
       @output << @stack.pop
     end
 
-    @output.join(' ')  #результат в строку
+    @output.join(' ')
+  end
+
+  private
+
+  # Метод для проверки
+  def number?(token)
+    token =~ /\A-?\d+\.?\d*\z/ # проверяет на целые и числа с плавающей точкой
   end
 end
 
-expression = "2 + 1 * 4"
-tokens = Tokens.new(expression) #анализ выражения
-puts tokens.analysis
+begin
+  expression = "3.4 + 5.9" # ваше выражение
+  tokens = Tokens.new(expression)
+  puts tokens.analysis
+rescue ZeroDivisionError => e
+  puts e.message
+end
