@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06057cb6-0344-4dbc-a132-20a9c8fab9b3" name="Changes" comment="pract3">
-      <change afterPath="$PROJECT_DIR$/pattern/MenuItem.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pract4/valid_ip_checker.rb" afterDir="false" />
+    <list default="true" id="06057cb6-0344-4dbc-a132-20a9c8fab9b3" name="Changes" comment="pract4">
+      <change beforePath="$PROJECT_DIR$/.idea/University.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/University.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pract4/valid_ip_checker.rb" beforeDir="false" afterPath="$PROJECT_DIR$/pract4/valid_ip_checker.rb" afterDir="false" />
+    </list>
+    <list id="daf5f4a2-eb4e-4030-a67c-d598da97465b" name="local" comment="">
+      <change afterPath="$PROJECT_DIR$/pattern/MenuItem.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Ruby File" />
         <option value="Ruby Class" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -34,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Alena011/stp_pr_1.git&quot;,
-    &quot;accountId&quot;: &quot;1dd07d70-fa19-4a53-b5d8-bd07f0a5f7e6&quot;
+    &quot;accountId&quot;: &quot;e64b821a-91eb-4a94-b8b3-0c6b3ab388b7&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -51,10 +54,14 @@
     "Ruby.MenuItem.executor": "Run",
     "Ruby.cake.executor": "Run",
     "Ruby.composite.executor": "Run",
+    "Ruby.minitest.executor": "Run",
     "Ruby.pract1.executor": "Run",
     "Ruby.tokens.executor": "Run",
+    "Ruby.valid_ip_checker.executor": "Run",
+    "Ruby.weather.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "Test::Unit/Shoulda/Minitest.TestIpValidator.executor": "Run",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/University/RubymineProjects/University",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -72,7 +79,7 @@
       <recent name="C:\Users\Alena\RubymineProjects\University\pract1" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.valid_ip_checker">
+  <component name="RunManager" selected="Ruby.minitest (1)">
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file enabled="true" id="RUBY_CUCUMBER" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -165,20 +172,6 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="MenuItem" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="University" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/pattern/MenuItem.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
@@ -206,7 +199,7 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="pract1" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="minitest (1)" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="University" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -216,11 +209,11 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/pract1/pract1.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/pract5/minitest/minitest.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="tokens" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="minitest" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="University" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -230,11 +223,11 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/pract2/tokens.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/minitest.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="valid_ip_checker" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="weather" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="University" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
       <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -244,8 +237,34 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/pract4/valid_ip_checker.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/weather.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestIpValidator" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
+      <module name="University" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/pract4/test_ip_validator.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="$MODULE_DIR$/pract4/test_ip_validator.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="^TestIpValidator(#|::)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
@@ -263,7 +282,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPTS_PATHS" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="CUSTOM_SET_OF_FILES" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
@@ -272,11 +291,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Ruby.valid_ip_checker" />
-        <item itemvalue="Ruby.MenuItem" />
+        <item itemvalue="Ruby.minitest (1)" />
+        <item itemvalue="Ruby.minitest" />
+        <item itemvalue="Ruby.weather" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.TestIpValidator" />
         <item itemvalue="Ruby.cake" />
-        <item itemvalue="Ruby.tokens" />
-        <item itemvalue="Ruby.pract1" />
       </list>
     </recent_temporary>
   </component>
@@ -292,6 +311,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="06057cb6-0344-4dbc-a132-20a9c8fab9b3" name="Changes" comment="" />
+      <changelist id="daf5f4a2-eb4e-4030-a67c-d598da97465b" name="local" comment="" />
       <created>1726132944781</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -306,7 +326,10 @@
       <workItem from="1727904236324" duration="1074000" />
       <workItem from="1727943886160" duration="2895000" />
       <workItem from="1728442625650" duration="856000" />
-      <workItem from="1728530654247" duration="1277000" />
+      <workItem from="1728530654247" duration="1737000" />
+      <workItem from="1728589481386" duration="1736000" />
+      <workItem from="1729051698814" duration="654000" />
+      <workItem from="1729129209286" duration="4787000" />
     </task>
     <task id="LOCAL-00001" summary="performed pract1">
       <option name="closed" value="true" />
@@ -340,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727903584056</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pract4">
+      <option name="closed" value="true" />
+      <created>1728532108799</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728532108799</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,12 +392,17 @@
     <MESSAGE value="performed pract1" />
     <MESSAGE value="pract2" />
     <MESSAGE value="pract3" />
-    <option name="LAST_COMMIT_MESSAGE" value="pract3" />
+    <MESSAGE value="pract4" />
+    <option name="LAST_COMMIT_MESSAGE" value="pract4" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/University@cake.rcov" NAME="cake Coverage Results" MODIFIED="1727903601609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
-    <SUITE FILE_PATH="coverage/University@pract1.rcov" NAME="pract1 Coverage Results" MODIFIED="1727019295466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
-    <SUITE FILE_PATH="coverage/University@composite.rcov" NAME="MenuItem Coverage Results" MODIFIED="1727904521781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
     <SUITE FILE_PATH="coverage/University@tokens.rcov" NAME="tokens Coverage Results" MODIFIED="1727536662402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
+    <SUITE FILE_PATH="coverage/University@TestIpValidator.rcov" NAME="TestIpValidator Coverage Results" MODIFIED="1729137118773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
+    <SUITE FILE_PATH="coverage/University@composite.rcov" NAME="MenuItem Coverage Results" MODIFIED="1727904521781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
+    <SUITE FILE_PATH="coverage/University@cake.rcov" NAME="cake Coverage Results" MODIFIED="1728590266302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
+    <SUITE FILE_PATH="coverage/University@pract1.rcov" NAME="pract1 Coverage Results" MODIFIED="1727019295466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
+    <SUITE FILE_PATH="coverage/University@valid_ip_checker.rcov" NAME="valid_ip_checker Coverage Results" MODIFIED="1728590191340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
+    <SUITE FILE_PATH="coverage/University@minitest.rcov" NAME="minitest Coverage Results" MODIFIED="1729143370220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
+    <SUITE FILE_PATH="coverage/University@weather.rcov" NAME="weather Coverage Results" MODIFIED="1729142078276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="University" />
   </component>
 </project>

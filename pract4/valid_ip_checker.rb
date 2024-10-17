@@ -11,7 +11,7 @@ def valid_ip?(ip)
   end
 end
 
-puts valid_ip?("192.168.1.1")  # => true
-puts valid_ip?("256.255.255.1")  # => false
-puts valid_ip?("192.168.01.1")  # => false
-puts valid_ip?("123.456.78")    # => false
+puts valid_ip?("192.168.1.1")  #true
+puts valid_ip?("256.255.255.1")  #false
+puts valid_ip?("192.168.01.1")  #false
+puts valid_ip?("123.456.78")    #false
