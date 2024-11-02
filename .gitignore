@@ -1,0 +1,90 @@
+# Бундлер конфигурации
+/.bundle
+
+# Установленные гемы в каталоге vendor
+/vendor/bundle
+
+# Логи и временные файлы
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# PID файлы, но сохраняем каталог
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Файлы базы данных SQLite
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# История команд Byebug
+.byebug_history
+
+# Отчеты о покрытии тестами
+/coverage/
+
+# Файлы среды окружения
+.env
+.env.*
+
+# Файлы конфигурации с секретами
+config/master.key
+config/credentials.yml.enc
+config/secrets.yml
+
+# Кэш Sass
+/.sass-cache/
+
+# Файлы macOS
+.DS_Store
+
+# Файлы редакторов и IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Нода модули (если используется Node.js)
+/node_modules/
+
+# Файлы Yarn
+/yarn.lock
+
+# Файлы пакета
+/package-lock.json
+/pnpm-lock.yaml
+
+# Примеры тестов
+/spec/examples.txt
+
+# Файлы Spring
+.spring
+spring/
+
+# Сторонние библиотеки
+/vendor/
+
+# Локальные настройки Rubocop
+.rubocop-http-cache
+.rubocop.yml
+
+# Файлы, создаваемые при слиянии конфликтов
+*.orig
+
+# Логи капистрано
+capybara-*.html
+
+# Файлы Bundler
+Gemfile.lock
+
+# Игнорируем файлы минификации
+/public/assets
+
+# Файлы отчетов тестов
+/test/tmp
+/spec/tmp
+
+# Файлы Yarn PnP
+.pnp.*
