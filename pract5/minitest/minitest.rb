@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'mocha/minitest'
 require 'csv'
-require_relative '../weather'  # Подключаем Ruby-файл с методами
+require_relative '../weather'
 
 class WeatherTest < Minitest::Test
   def test_fetch_weather_success

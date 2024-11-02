@@ -60,7 +60,7 @@ class Tokens
 end
 
 begin
-  expression = "3.4 + 5.9" # ваше выражение
+  expression = "4-5+(-4+5)" # ваше выражение
   tokens = Tokens.new(expression)
   puts tokens.analysis
 rescue ZeroDivisionError => e
